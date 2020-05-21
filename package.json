@@ -1,0 +1,16 @@
+{
+  "name": "streams",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pratik Kenaudekar",
+  "license": "MIT",
+  "scripts": {
+    "api": "yarn --cwd api start",
+    "rtmpserver": "yarn --cwd rtmpserver start",
+    "client": "yarn --cwd client start",
+    "dev": "concurrently \"yarn api\" \"yarn client\" \"yarn rtmpserver\""
+  },
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
